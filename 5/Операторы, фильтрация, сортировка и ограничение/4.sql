@@ -3,12 +3,21 @@
 Месяцы заданы в виде списка английских названий (may, august)
 */
 
+-- Вариант 1.
+-- SELECT
+-- 	*
+-- FROM 
+-- 	users
+-- WHERE
+-- 	CASE
+-- 		WHEN DATE_FORMAT(birthday_at, '%m') = 5 THEN 'may'
+--         WHEN DATE_FORMAT(birthday_at, '%m') = 8 THEN 'august'
+-- 	END IN ('may', 'august')
+    
+-- Вариант 2.
 SELECT
 	*
 FROM 
 	users
 WHERE
-	CASE
-		WHEN DATE_FORMAT(birthday_at, '%m') = 5 THEN 'may'
-        WHEN DATE_FORMAT(birthday_at, '%m') = 8 THEN 'august'
-	END IN ('may', 'august')
+	DATE_FORMAT(birthday_at, '%M') IN ('may', 'august')
