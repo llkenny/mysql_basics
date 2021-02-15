@@ -6,8 +6,8 @@
 
 SELECT
 	id,
-	from_ru,
-    to_ru
+	from_ru `from`,
+    to_ru `to`
 FROM (
 	SELECT
 		*,
