@@ -32,4 +32,11 @@ INSERT INTO `max_oil`.`organization_details` (`name`, `inn`, `address`, `phone`)
 INSERT INTO `max_oil`.`organization_details` (`name`, `inn`, `address`, `phone`) VALUES ('Колеса ЛенОбл', '000000000009', 'Ulitsa Matrosova, 76, Chkalovsk, Nizhegorodskaya oblast, 606541', '700012345608');
 INSERT INTO `max_oil`.`organization_details` (`name`, `inn`, `address`, `phone`) VALUES ('КубаньАЗС', '000000000010', 'Ulitsa Askoldovtsev, 26 корпус 2, Murmansk, Murmanskaya oblast, 183040', '700012345609');
 
+-- parter
+INSERT INTO `max_oil`.`partner` (`organization_details_id`) VALUES ('2');
+INSERT INTO `max_oil`.`partner` (`organization_details_id`) VALUES ('4');
+INSERT INTO `max_oil`.`partner` (`organization_details_id`) VALUES ('6');
+INSERT INTO `max_oil`.`partner` (`organization_details_id`) VALUES ('7');
+
+
 
