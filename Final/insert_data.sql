@@ -38,5 +38,10 @@ INSERT INTO `max_oil`.`partner` (`organization_details_id`) VALUES ('4');
 INSERT INTO `max_oil`.`partner` (`organization_details_id`) VALUES ('6');
 INSERT INTO `max_oil`.`partner` (`organization_details_id`) VALUES ('7');
 
+-- manager
+INSERT INTO `max_oil`.`manager` (`name`, `personnel_number`, `phone`, `email`) VALUES ('Василий Иванов', 'XXXXXYYYY1', '72001237800', 'v.ivanov@maxoil.com');
+INSERT INTO `max_oil`.`manager` (`name`, `personnel_number`, `phone`, `email`) VALUES ('Дмитрий Петров', 'XXXXXYYYY2', '72001237801', 'd.petrov@maxoil.com');
+INSERT INTO `max_oil`.`manager` (`name`, `personnel_number`, `phone`, `email`) VALUES ('Иван Кузнецов', 'XXXXXYYYY3', '72001237802', 'i.kuznecov@maxoil.com');
+INSERT INTO `max_oil`.`manager` (`name`, `personnel_number`, `phone`, `email`) VALUES ('Алексей Сидоров', 'XXXXXYYYY4', '72001237803', 'a.sidorov@maxoil.com');
 
 
