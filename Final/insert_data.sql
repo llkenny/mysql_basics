@@ -130,3 +130,35 @@ INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `activ
 INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('008-221905', '2013-10-23', '5', '2018-01-17', '0');
 INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('001-33223', '2019-09-14', '6', '2018-12-08', '1');
 INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('004-33517', '2018-02-02', '6', '2018-07-02', '1');
+
+-- employee + user
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Иван Иванов', '1', '1');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Иван Петр', '1', '1');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Петр Иванов', '1', '1');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Петр Петров', '2', '1');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Василий Иванов', '3', '2');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Александр Иванов', '4', '3');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Владимир Иванов', '6', '4');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Антон Иванов', '7', '4');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Иван Антонов', '7', '4');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Антон Антонов', '7', '4');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Михаил Иванов', '8', '5');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Михаил Петров', '9', '6');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Евгений Иванов', '9', '6');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Евгений Петров', '10', '6');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Андрей Иванов', '10', '6');
+INSERT INTO `max_oil`.`employee` (`name`, `contract_id`, `organization_id`) VALUES ('Андрей Петров', '5', '4');
+
+UPDATE `user` SET `password` = SHA2('TEST1', 256), `role` = 'admin' WHERE (`id` = '1');
+UPDATE `user` SET `password` = SHA2('TEST2', 256), `role` = 'admin' WHERE (`id` = '2');
+UPDATE `user` SET `password` = SHA2('TEST3', 256), `role` = 'admin' WHERE (`id` = '3');
+UPDATE `user` SET `password` = SHA2('TEST4', 256), `role` = 'admin' WHERE (`id` = '4');
+UPDATE `user` SET `password` = SHA2('TEST5', 256), `role` = 'admin' WHERE (`id` = '5');
+UPDATE `user` SET `password` = SHA2('TEST6', 256), `role` = 'admin' WHERE (`id` = '6');
+UPDATE `user` SET `password` = SHA2('TEST7', 256) WHERE (`id` = '7');
+UPDATE `user` SET `password` = SHA2('TEST8', 256) WHERE (`id` = '8');
+UPDATE `user` SET `password` = SHA2('TEST9', 256) WHERE (`id` = '9');
+UPDATE `user` SET `password` = SHA2('TEST10', 256) WHERE (`id` = '10');
+UPDATE `user` SET `password` = SHA2('TEST11', 256) WHERE (`id` = '11');
+UPDATE `user` SET `password` = SHA2('TEST12', 256) WHERE (`id` = '12');
+UPDATE `user` SET `password` = SHA2('TEST12', 256) WHERE (`id` = '13');
