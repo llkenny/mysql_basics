@@ -117,3 +117,16 @@ END//
 DELIMITER ;
 
 CALL fill_station_service_product(200);
+
+-- contract
+
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('001-331K', '2017-02-11', '1', '2018-02-11', '1');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('001-332K', '2019-02-07', '1', '2022-02-12', '1');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('001-333K', '2014-02-18', '2', '2024-02-11', '1');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('002-001K', '2017-11-11', '3', '2022-03-15', '0');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('002-002T', '2016-03-19', '4', '2018-12-23', '1');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('005-112F', '2014-08-13', '4', '2018-03-14', '1');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('007-33151', '2015-10-15', '4', '2018-02-21', '1');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('008-221905', '2013-10-23', '5', '2018-01-17', '0');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('001-33223', '2019-09-14', '6', '2018-12-08', '1');
+INSERT INTO `contract` (`number`, `date`, `organization_id`, `expire_at`, `active`) VALUES ('004-33517', '2018-02-02', '6', '2018-07-02', '1');
