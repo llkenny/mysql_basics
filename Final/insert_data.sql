@@ -162,3 +162,11 @@ UPDATE `user` SET `password` = SHA2('TEST10', 256) WHERE (`id` = '10');
 UPDATE `user` SET `password` = SHA2('TEST11', 256) WHERE (`id` = '11');
 UPDATE `user` SET `password` = SHA2('TEST12', 256) WHERE (`id` = '12');
 UPDATE `user` SET `password` = SHA2('TEST12', 256) WHERE (`id` = '13');
+
+-- virtual_card
+INSERT INTO `virtual_card` (`device_id`, `type`, `created_at`, `expire_at`) VALUES ('ajksdhaksjdhaksjhdkjlasdl', 'QR', '2018-02-21 00:00:00', '2018-03-21 00:00:00');
+INSERT INTO `virtual_card` (`device_id`, `type`, `created_at`, `expire_at`) VALUES ('lklgkjlkasjdlka', 'QR', '2020-02-21 00:00:00', '2021-03-21 00:00:00');
+INSERT INTO `virtual_card` (`device_id`, `type`, `created_at`, `expire_at`) VALUES ('iouhkjsmndfmsdnjfhb', 'QR', '2020-05-21 00:00:00', '2021-05-21 00:00:00');
+INSERT INTO `virtual_card` (`device_id`, `type`, `created_at`, `expire_at`) VALUES ('mbnsjkdfhsdkjfhbdsjkfhbdshjfgb', 'NFC', '2019-02-21 21:00:00', '2021-06-11 00:00:00');
+INSERT INTO `virtual_card` (`device_id`, `type`, `created_at`, `expire_at`) VALUES ('oiuhiuehrkjhbsdjhfbsdkjfhbsdjf', 'NFC', '2021-01-04 08:30:15', '2022-08-01 00:00:00');
+
