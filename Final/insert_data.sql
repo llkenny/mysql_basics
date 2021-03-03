@@ -258,3 +258,17 @@ END//
 DELIMITER ;
 
 CALL fill_transaction(150);
+
+-- limit
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `period`, `period_started_at`, `station_id`, `card_id`, `service_id`) VALUES ('50', '1', '86400', '2018-07-20 21:30:00', '2', '4', '1');
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `period`, `period_started_at`, `station_id`, `partner_id`, `card_id`, `product_id`) VALUES ('30', '14', '604800', '2018-07-20 21:30:00', NULL, '1', '11', '1');
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `period`, `period_started_at`, `station_id`, `partner_id`, `card_id`, `product_id`) VALUES ('30', '14', NULL, NULL, '5', NULL, '11', '4');
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `station_id`, `partner_id`, `card_id`, `product_id`) VALUES ('1', '0', '18', NULL, '31', '5');
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `station_id`, `card_id`, `service_id`, `product_id`) VALUES ('18', '18', '11', '14', '5', NULL);
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `station_id`, `partner_id`, `card_id`, `service_id`, `product_id`) VALUES ('1', '0', NULL, '4', '1', '8', NULL);
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `station_id`, `card_id`, `product_id`) VALUES ('1', '0', '18', '31', '5');
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `period`, `period_started_at`, `station_id`, `partner_id`, `card_id`, `product_id`) VALUES (NULL, NULL, '604800', '2018-07-20 21:30:00', NULL, '1', '11', '4');
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `period`, `period_started_at`, `station_id`, `partner_id`, `card_id`, `product_id`) VALUES (NULL, NULL, '604800', '2020-07-20 21:30:00', NULL, '1', '28', '2');
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `period`, `period_started_at`, `station_id`, `partner_id`, `card_id`, `service_id`, `product_id`) VALUES (NULL, NULL, '604800', '2020-08-20 21:30:00', '3', NULL, '17', '4', NULL);
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `period`, `period_started_at`, `station_id`, `partner_id`, `card_id`, `service_id`, `product_id`) VALUES (NULL, NULL, '86400', '2020-01-20 21:30:00', '12', NULL, '2', '5', NULL);
+INSERT INTO `max_oil`.`limit` (`count`, `count_used`, `period`, `period_started_at`, `station_id`, `partner_id`, `card_id`, `product_id`) VALUES (NULL, NULL, '86400', '2021-01-20 21:30:00', NULL, '1', '2', '4');
