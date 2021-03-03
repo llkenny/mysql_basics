@@ -44,4 +44,11 @@ INSERT INTO `max_oil`.`manager` (`name`, `personnel_number`, `phone`, `email`) V
 INSERT INTO `max_oil`.`manager` (`name`, `personnel_number`, `phone`, `email`) VALUES ('Иван Кузнецов', 'XXXXXYYYY3', '72001237802', 'i.kuznecov@maxoil.com');
 INSERT INTO `max_oil`.`manager` (`name`, `personnel_number`, `phone`, `email`) VALUES ('Алексей Сидоров', 'XXXXXYYYY4', '72001237803', 'a.sidorov@maxoil.com');
 
+-- organization
+INSERT INTO `max_oil`.`organization` (`discount_multiplier`, `organization_details_id`, `manager_id`) VALUES ('1', '1', '1');
+INSERT INTO `max_oil`.`organization` (`discount_multiplier`, `organization_details_id`, `manager_id`) VALUES ('0.98', '3', '1');
+INSERT INTO `max_oil`.`organization` (`discount_multiplier`, `organization_details_id`, `manager_id`) VALUES ('0.98', '5', '2');
+INSERT INTO `max_oil`.`organization` (`discount_multiplier`, `organization_details_id`, `manager_id`) VALUES ('0.95', '8', '3');
+INSERT INTO `max_oil`.`organization` (`discount_multiplier`, `organization_details_id`, `manager_id`) VALUES ('1', '9', '3');
+INSERT INTO `max_oil`.`organization` (`discount_multiplier`, `organization_details_id`, `manager_id`) VALUES ('1.01', '10', '4');
 
